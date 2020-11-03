@@ -24,3 +24,16 @@
 (define (equal-rat x y)
   (= (* (numer x) (denom y))
      (* (numer y) (denom x))))
+
+;; construct a rational number
+;; (define make-rat cons)
+(define (make-rat x y)
+  (cons x y))
+
+;; (define numer car)
+(define (numer x)
+  (car x))
+
+;; (define denom cdr)
+(define (denom x)
+  (cdr x))
